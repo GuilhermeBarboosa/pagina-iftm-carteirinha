@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto com Tailwind</title>
+    <title>IFTM</title>
+
+    <link rel="icon" href="./favicon.png" type="image/png">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -48,123 +50,134 @@
     </div>
 
     <div class="container navbar">
-        <nav class="w-full flex justify-between p-5 pl-2">
-            <div class="flex items-center">
-                <img class="logo-gov" src="./govbr-logo-large.png" alt="">
-            </div>
-
-
-            <div class="flex items-center justify-center">
-                <div class="menu-container px-2">
-                    <i class="m-2  fa-solid fa-ellipsis-vertical menu-icon"></i>
-
-                    <div class="dropdown-menu">
-                        <p class="br-item font-bold">Acesso Rápido</p>
-                        <a class="br-item" href="https://www.gov.br/pt-br/orgaos-do-governo">Órgãos do Governo</a>
-                        <a class="br-item" href="https://iftm.edu.br/acesso-a-informacao/">Acesso à Informação</a>
-                        <a class="br-item" href="http://www.planalto.gov.br/legislacao">Legislação</a>
-                        <a class="br-item"
-                            href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Acessibilidade</a>
-                    </div>
+        <div class="navbar-mobile">
+            <nav class="w-full flex justify-between p-5 pl-2">
+                <div class="flex items-center">
+                    <img class="logo-gov" src="./govbr-logo-large.png" alt="">
                 </div>
 
 
-                <div class="border-l-2 px-2 flex">
-                    <i class="m-2 fa-solid fa-language"></i>
-                    <div class="menu-container">
-                        <i class="m-2 fa-solid fa-grip menu-icon"></i>
+                <div class="flex items-center justify-center">
+                    <div class="menu-container px-2">
+                        <i class="m-2  fa-solid fa-ellipsis-vertical menu-icon"></i>
 
                         <div class="dropdown-menu">
-                            <div class="align-items-center br-item">
-                                <a href="http://mail.google.com/a/iftm.edu.br" title="Acessar Webmail Institucional"
-                                    class="br-button circle small" aria-label="Webmail">
-                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                                    <span class="text">Webmail Institucional</span>
-                                </a>
-                            </div>
-                            <div class="align-items-center br-item">
-                                <a href="https://virtualif.iftm.edu.br/" title="Acessar Virtual IF"
-                                    class="br-button circle small" aria-label="Virtual IF">
-                                    <img class="icone-virtual-header" alt=""
-                                        src="/sdsgov/img/icons/virtual.png">
-                                    <span class="text">Virtual IF</span>
-                                </a>
-                            </div>
-                            <div class="align-items-center br-item">
-                                <a href="javascript:void(0)" title="Ativar/Desativar Alto contrastre"
-                                    class="br-button circle small btn-body-autocontrast" aria-label="Alto contrastre"><i
-                                        class="fa-solid fa-circle-half-stroke"></i>
-                                    <span class="text">Alto contrastre</span>
-                                </a>
-                            </div>
-
-                            <div class="align-items-center br-item">
-                                <a href="/rss" title="Acessar RSS" class="br-button circle small" aria-label="Rss">
-                                    <i class="fa-solid fa-rss" aria-hidden="true"></i>
-                                    <span class="text">RSS</span>
-                                </a>
-                            </div>
+                            <p class="br-item font-bold">Acesso Rápido</p>
+                            <a class="br-item" href="https://www.gov.br/pt-br/orgaos-do-governo">Órgãos do Governo</a>
+                            <a class="br-item" href="https://iftm.edu.br/acesso-a-informacao/">Acesso à Informação</a>
+                            <a class="br-item" href="http://www.planalto.gov.br/legislacao">Legislação</a>
+                            <a class="br-item"
+                                href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Acessibilidade</a>
                         </div>
                     </div>
-                    <i class="m-2 fa-solid fa-magnifying-glass"></i>
+
+
+                    <div class="border-l-2 px-2 flex">
+                        <i class="m-2 fa-solid fa-language"></i>
+                        <div class="menu-container">
+                            <i class="m-2 fa-solid fa-grip menu-icon"></i>
+
+                            <div class="dropdown-menu">
+                                <div class="align-items-center br-item">
+                                    <a href="http://mail.google.com/a/iftm.edu.br" title="Acessar Webmail Institucional"
+                                        class="br-button circle small" aria-label="Webmail">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                        <span class="text">Webmail Institucional</span>
+                                    </a>
+                                </div>
+                                <div class="align-items-center br-item">
+                                    <a href="https://virtualif.iftm.edu.br/" title="Acessar Virtual IF"
+                                        class="br-button circle small" aria-label="Virtual IF">
+                                        <img class="icone-virtual-header" alt="" src="/sdsgov/img/icons/virtual.png">
+                                        <span class="text">Virtual IF</span>
+                                    </a>
+                                </div>
+                                <div class="align-items-center br-item">
+                                    <a href="javascript:void(0)" title="Ativar/Desativar Alto contrastre"
+                                        class="br-button circle small btn-body-autocontrast"
+                                        aria-label="Alto contrastre"><i class="fa-solid fa-circle-half-stroke"></i>
+                                        <span class="text">Alto contrastre</span>
+                                    </a>
+                                </div>
+
+                                <div class="align-items-center br-item">
+                                    <a href="/rss" title="Acessar RSS" class="br-button circle small" aria-label="Rss">
+                                        <i class="fa-solid fa-rss" aria-hidden="true"></i>
+                                        <span class="text">RSS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="m-2 fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <nav class="w-full flex  items-center px-5 pb-6">
-            <i class="fa-solid fa-bars-staggered"></i>
+            <nav class="w-full flex  items-center px-5 pb-6">
+                <i class="fa-solid fa-bars-staggered"></i>
 
-            <div class="header-title">Instituto Federal do Triângulo Mineiro</div>
-        </nav>
+                <div class="header-title">Instituto Federal do Triângulo Mineiro</div>
+            </nav>
+        </div>
     </div>
 
 
     <div class="navbar-placeholder"></div>
 
     <div class="container rota flex items-center w-full">
-        <i class="icon fas fa-home mr-5"></i>
+        <div class="flex items-center w-full rota-mobile">
+            <i class="icon fas fa-home mr-5"></i>
 
-        <div class="w-full">
-            <i class="icon fas fa-chevron-right"></i>
-            <span>Autenticação de
-                documentos</span>
+            <div class="w-full">
+                <i class="icon fas fa-chevron-right"></i>
+                <span>Autenticação de
+                    documentos</span>
+            </div>
         </div>
 
     </div>
 
 
-    <div class="container autenticar-documento mb-7">
-        <div>
-            <h1 class="text-semi-bold mb-0 pb-3">
-                Autenticação de documentos
-            </h1>
+    <div class="container autenticar-documento mb-7 flex items-center w-full">
 
-            <div class="linha-fina">
-                Página para autenticação de documentos do IFTM.
+        <div class="autenticar-documento-mobile">
+            <div>
+                <h1 class="text-semi-bold mb-0 pb-3">
+                    Autenticação de documentos
+                </h1>
+
+                <div class="linha-fina">
+                    Página para autenticação de documentos do IFTM.
+                </div>
+            </div>
+
+
+            <div>
+                <div class="alert alert-success">
+                    <h5 class="mt-10 mb-5">Carteirinha de Estudante</h5>
+                    <br>
+                    <p>Aluno(a): <b>ARTUR CAMPOS MIRANDA</b></p>
+                    <p>Curso: <b>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</b></p>
+                    <p><b>VÁLIDO ATÉ: 01/2026</b></p>
+                    <br>
+                </div>
             </div>
         </div>
 
 
-        <div>
-            <div class="alert alert-success">
-                <h5 class="mt-10 mb-5">Carteirinha de Estudante</h5>
-                <br>
-                <p>Aluno(a): <b>ARTUR CAMPOS MIRANDA</b></p>
-                <p>Curso: <b>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</b></p>
-                <p><b>VÁLIDO ATÉ: 01/2026</b></p>
-                <br>
-            </div>
-        </div>
     </div>
 
     <div class=" box-info">
-        <div class="flex items-center p-5" role="alert">
-            <div class="icon pr-5"><i class="fas fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
-            </div>
-            <div class="content">
-                <span class="message-title">Atenção.</span>
-                <span class="message-body"> Encontrou algum erro nesta página? <a
-                        href="https://iftm.edu.br/faleconosco/?assunto=Site">Clique aqui para relatar o erro.</a></span>
+        <div class="box-info-mobile">
+            <div class="flex items-center p-5" role="alert">
+                <div class="icon pr-5"><i class="fas fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <span class="message-title">Atenção.</span>
+                    <span class="message-body"> Encontrou algum erro nesta página? <a
+                            href="https://iftm.edu.br/faleconosco/?assunto=Site">Clique aqui para relatar o
+                            erro.</a></span>
+                </div>
             </div>
         </div>
     </div>
