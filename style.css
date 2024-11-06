@@ -2,8 +2,26 @@
   font-family: "Raleway", sans-serif;
 }
 
+.container.navbar {
+  transition: all 0.3s ease;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-placeholder {
+  height: 100px;
+  display: none;
+}
+
 .navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra apenas na parte de baixo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   i {
     color: #1351b4;
@@ -14,10 +32,16 @@
     font-weight: 400;
     font-size: 85%;
   }
+
+  .logo-gov {
+    transition: width 0.3s ease;
+    width: 60%;
+  }
 }
 
 .rota {
   padding: 5%;
+  padding-bottom: 10%;
 
   i {
     color: #cccccc;
@@ -72,7 +96,19 @@
   .message-title {
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #333333;
+  }
+
+  .message-body {
+    a {
+      color: #1351b4;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  i {
+    color: #333333;
   }
 }
 
@@ -80,13 +116,22 @@
   background-color: #071d41;
 
   .img-footer {
-    width: 55%;
+    width: 50%;
     padding: 10%;
     padding-left: 5%;
   }
 
   .br-item {
     color: #c5d4eb;
+
+    .content {
+      font-size: small;
+      margin-bottom: 5px;
+      margin-top: 5px;
+
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
   }
 
   .br-list-item {
@@ -95,14 +140,14 @@
     .br-item {
       margin-bottom: 5px;
       margin-top: 5px;
-    }
 
-    .content {
-      margin-bottom: 5px;
-      margin-top: 5px;
+      .content {
+        margin-bottom: 10px;
+        margin-top: 10px;
 
-      padding-bottom: 5px;
-      padding-top: 5px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
     }
   }
 }
