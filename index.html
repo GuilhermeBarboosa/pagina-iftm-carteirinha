@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto com Tailwind</title>
-  
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <link rel="stylesheet"
@@ -17,6 +17,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link href="./style.css" rel="stylesheet">
+
+    <script src="./script.js"></script>
 </head>
 
 <body class="">
@@ -99,19 +101,15 @@
             <img class="img-footer" src="./govbr.png" alt="">
         </div>
 
-
-
-
         <div class="br-list " data-toggle="data-toggle" data-sub="data-sub">
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Acesso à Informação</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/acesso-a-informacao/institucional/">
                         <div class="content">Institucional</div>
@@ -168,14 +166,13 @@
                 </div>
             </div>
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Assuntos</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/eventos/">
                         <div class="content">Agenda de eventos</div>
@@ -211,14 +208,13 @@
                 </div>
             </div>
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Campi e polos</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/campinaverde/">
                         <div class="content">Campina Verde</div>
@@ -272,14 +268,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Canais de atendimento</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/contatos/">
                         <div class="content">Contatos</div>
@@ -301,14 +296,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Centrais de conteúdo</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/iftm-na-midia/">
                         <div class="content">IFTM na Mídia</div>
@@ -330,14 +324,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Composição</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/acesso-a-informacao/institucional/organograma">
                         <div class="content">Organograma</div>
@@ -353,14 +346,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Navegação</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
                         <div class="content">Acessibilidade</div>
@@ -373,14 +365,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Programas e Projetos</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
 
                     <a class="br-item" href="/academias">
@@ -404,14 +395,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Serviços</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="/servicos/">
                         <div class="content">Serviços oferecidos</div>
@@ -420,14 +410,13 @@
             </div>
 
             <div class="col-3">
-                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
-                    href="javascript:void(0)">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase">
                     <div class="content text-down-01 text-bold text-uppercase items-center">Sistemas</div>
                     <div class="support">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-                <div class="br-list" style="display: none;">
+                <div class="br-list-item px-10 mb-5" style="display: none;">
                     <span class="br-divider d-md-none"></span>
                     <a class="br-item" href="http://biblioteca.iftm.edu.br/">
                         <div class="content">Biblioteca</div>
