@@ -44,3 +44,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcons = document.querySelectorAll(".menu-icon");
+    const dropdownMenus = document.querySelectorAll(".dropdown-menu");
+
+    menuIcons.forEach((icon, index) => {
+        const correspondingMenu = dropdownMenus[index]; // Associa o ícone ao menu correspondente
+
+        icon.addEventListener("click", function (event) {
+            // Fecha outros menus antes de abrir o atual
+            dropdownMenus.forEach(menu => {
+                if (menu !== correspondingMenu) {
+                    menu.style.display = "none";
+                }
+            });
+
+            // Alterna a exibição do menu atual
+            correspondingMenu.style.display = correspondingMenu.style.display === "block" ? "none" : "block";
+            event.stopPropagation(); // Impede o evento de clicar fora de afetar este clique
+        });
+    });
+
+    // Fecha o menu se clicar fora dele
+    document.addEventListener("click", function (event) {
+        dropdownMenus.forEach(menu => {
+            if (!menu.contains(event.target)) {
+                menu.style.display = "none";
+            }
+        });
+    });
+});
