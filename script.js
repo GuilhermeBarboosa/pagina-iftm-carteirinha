@@ -34,14 +34,41 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         if (window.scrollY > 0) {
             navbar.classList.add("fixed-navbar");
-            placeholder.style.display = "block"; // Exibe o placeholder para evitar o pulo
+            placeholder.style.display = "block";
             img.style.width = "40%";
         } else {
             navbar.classList.remove("fixed-navbar");
-            placeholder.style.display = "none"; // Oculta o placeholder
+            placeholder.style.display = "none";
             img.style.width = "60%";
         }
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const botao = document.querySelector("#menu-lateral");
+    const botaoFecharMenu = document.querySelector("#fechar-menu");
+
+    botao.addEventListener("click", function () {
+        abrirFecharMenu();
+    });
+
+    botaoFecharMenu.addEventListener("click", function () {
+        abrirFecharMenu();
+    });
+
+
+    function abrirFecharMenu() {
+        let page = document.querySelector("#page");
+        let menu = document.querySelector("#menu-container");
+
+        if (page.style.display === "block") {
+            page.style.display = "none";
+            menu.style.display = "block";
+        } else {
+            page.style.display = "block";
+            menu.style.display = "none";
+        }
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -49,23 +76,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdownMenus = document.querySelectorAll(".dropdown-menu");
 
     menuIcons.forEach((icon, index) => {
-        const correspondingMenu = dropdownMenus[index]; // Associa o ícone ao menu correspondente
+        const correspondingMenu = dropdownMenus[index];
 
         icon.addEventListener("click", function (event) {
-            // Fecha outros menus antes de abrir o atual
+
             dropdownMenus.forEach(menu => {
                 if (menu !== correspondingMenu) {
                     menu.style.display = "none";
                 }
             });
 
-            // Alterna a exibição do menu atual
+
             correspondingMenu.style.display = correspondingMenu.style.display === "block" ? "none" : "block";
-            event.stopPropagation(); // Impede o evento de clicar fora de afetar este clique
+            event.stopPropagation();
         });
     });
 
-    // Fecha o menu se clicar fora dele
+
     document.addEventListener("click", function (event) {
         dropdownMenus.forEach(menu => {
             if (!menu.contains(event.target)) {
