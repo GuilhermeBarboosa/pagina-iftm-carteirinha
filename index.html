@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com Tailwind</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_vert" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="container navbar">
+        <nav class="w-full flex justify-between p-5 pl-2">
+            <div class="flex items-center">
+                <img src="./govbr-logo-large.png" alt="" width="60%">
+            </div>
+
+
+            <div class="flex items-center justify-center">
+                <i class="m-2 fa-solid fa-ellipsis-vertical"></i>
+                <div class="border-l-2">
+                    <i class="m-2 fa-solid fa-language"></i>
+                    <i class="m-2 fa-solid fa-grip"></i>
+                    <i class="m-2 fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="w-full flex  items-center px-5 pb-6">
+            <i class="fa-solid fa-bars-staggered"></i>
+
+            <div class="header-title">Instituto Federal do Triângulo Mineiro</div>
+        </nav>
+    </div>
+
+
+    <div class="container rota flex items-center w-full">
+        <i class="icon fas fa-home mr-5"></i>
+
+        <div class="w-full">
+            <i class="icon fas fa-chevron-right"></i>
+            <span>Autenticação de
+                documentos</span>
+        </div>
+
+    </div>
+
+
+    <div class="container autenticar-documento mb-7">
+        <div>
+            <h1 class="text-semi-bold mb-0 pb-3">
+                Autenticação de documentos
+            </h1>
+
+            <div class="linha-fina">
+                Página para autenticação de documentos do IFTM.
+            </div>
+        </div>
+
+
+        <div>
+            <div class="alert alert-success">
+                <h5 class="mt-10 mb-5">Carteirinha de Estudante</h5>
+                <br>
+                <p>Aluno(a): <b>ARTUR CAMPOS MIRANDA</b></p>
+                <p>Curso: <b>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</b></p>
+                <p><b>VÁLIDO ATÉ: 01/2026</b></p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class=" box-info">
+        <div class="flex items-center p-5" role="alert">
+            <div class="icon pr-5"><i class="fas fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <span class="message-title">Atenção.</span>
+                <span class="message-body"> Encontrou algum erro nesta página? <a
+                        href="/faleconosco/?assunto=Site">Clique aqui para relatar o erro.</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div>
+            <img class="img-footer" src="./govbr.png" alt="">
+        </div>
+
+
+
+
+        <div class="br-list " data-toggle="data-toggle" data-sub="data-sub">
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Acesso à Informação</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/acesso-a-informacao/institucional/">
+                        <div class="content">Institucional</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/acoes_programas/">
+                        <div class="content">Ações e Programas</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/participacaosocial/">
+                        <div class="content">Participação Social</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/auditorias/">
+                        <div class="content">Auditorias</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/convenios/">
+                        <div class="content">Convênios e transferências</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/despesas/">
+                        <div class="content">Receitas e despesas</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/licitacoes/">
+                        <div class="content">Licitações e contratos</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/servidores/">
+                        <div class="content">Servidores</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/informacoesclassificadas/">
+                        <div class="content">Informações classificadas</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/sic/">
+                        <div class="content">Serviço de Informação ao Cidadão – SIC</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/perguntas-frequentes/">
+                        <div class="content">Perguntas frequentes</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/dadosabertos/">
+                        <div class="content">Dados abertos</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/sancoes-administrativas/">
+                        <span class="content">Sanções Administrativas</span>
+                    </a>
+                    <a class="br-item" href="/pdi/">
+                        <div class="content">Plano de Desenvolvimento Institucional</div>
+                    </a>
+                    <a class="br-item" href="/transparencia-prestacao-de-contas/">
+                        <div class="content">Transparência e prestação de contas</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/protecao-de-dados/">
+                        <div class="content">Proteção de dados</div>
+                    </a>
+                    <a class="br-item" href="/pesquisa-publica/">
+                        <div class="content">Pesquisa Pública Processos IFTM</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Assuntos</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/eventos/">
+                        <div class="content">Agenda de eventos</div>
+                    </a>
+                    <a class="br-item" href="/calendarios/">
+                        <div class="content">Calendários</div>
+                    </a>
+                    <a class="br-item" href="/certificacoes-diplomas/">
+                        <div class="content">Certificações e diplomas</div>
+                    </a>
+                    <a class="br-item" href="/cursos/">
+                        <div class="content">Cursos oferecidos</div>
+                    </a>
+                    <a class="br-item" href="/editais/">
+                        <div class="content">Editais</div>
+                    </a>
+                    <a class="br-item" href="/editora/">
+                        <div class="content">Editora IFTM</div>
+                    </a>
+                    <a class="br-item" href="/ingresso">
+                        <div class="content">Estude no IFTM</div>
+                    </a>
+                    <a class="br-item" href="/noticias">
+                        <div class="content">Notícias</div>
+                    </a>
+                    <a class="br-item" href="/parcerias/">
+                        <div class="content">Parcerias Interinstitucionais</div>
+                    </a>
+                    <a class="br-item" href="/concursos">
+                        <div class="content">Trabalhe no IFTM</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Campi e polos</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/campinaverde/">
+                        <div class="content">Campina Verde</div>
+                    </a>
+
+                    <a class="br-item" href="/ituiutaba/">
+                        <div class="content">Ituiutaba</div>
+                    </a>
+
+                    <a class="br-item" href="/paracatu/">
+                        <div class="content">Paracatu</div>
+                    </a>
+                    <a class="br-item" href="/patosdeminas/">
+                        <div class="content">Patos de Minas</div>
+                    </a>
+                    <a class="br-item" href="/patrocinio/">
+                        <div class="content">Patrocínio</div>
+                    </a>
+                    <a class="br-item" href="/uberaba/">
+                        <div class="content">Uberaba</div>
+                    </a>
+                    <a class="br-item" href="/uraparquetecnologico/">
+                        <div class="content">Uberaba Parque Tecnológico</div>
+                    </a>
+                    <a class="br-item" href="/uberlandia/">
+                        <div class="content">Uberlândia</div>
+                    </a>
+                    <a class="br-item" href="/uberlandiacentro/">
+                        <div class="content">Uberlândia Centro</div>
+                    </a>
+                    <a class="br-item" href="/carmoparanaiba/">
+                        <div class="content">Polo Carmo do Paranaíba</div>
+                    </a>
+                    <a class="br-item" href="/coromandel/">
+                        <div class="content">Polo Coromandel</div>
+                    </a>
+                    <a class="br-item" href="/ibia/">
+                        <div class="content">Polo Ibiá</div>
+                    </a>
+                    <a class="br-item" href="/joaopinheiro/">
+                        <div class="content">Polo João Pinheiro</div>
+                    </a>
+                    <a class="br-item" href="/embrapii/">
+                        <div class="content">Polo EMBRAPII</div>
+                    </a>
+                    <a class="br-item" href="/rede-cerrado-mineiro/">
+                        <div class="content">Rede de Inovação Agropecuária do Cerrado Mineiro</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Canais de atendimento</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/contatos/">
+                        <div class="content">Contatos</div>
+                    </a>
+                    <a class="br-item" href="/faleconosco/">
+                        <div class="content">Fale conosco</div>
+                    </a>
+                    <a class="br-item" href="/ouvidoria">
+                        <div class="content">Ouvidoria</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/sic/">
+                        <div class="content">Serviço de Informação ao Cidadão – SIC</div>
+                    </a>
+                    <a class="br-item" href="/comissaodeetica/">
+                        <div class="content">Comissão de Ética</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Centrais de conteúdo</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/iftm-na-midia/">
+                        <div class="content">IFTM na Mídia</div>
+                    </a>
+                    <a class="br-item" href="https://www.flickr.com/photos/iftmoficial/">
+                        <div class="content">Imagens</div>
+                    </a>
+                    <a class="br-item" href="/editora/publicacoes/">
+                        <div class="content">Publicações</div>
+                    </a>
+                    <a class="br-item" href="https://www.youtube.com/iftmoficial">
+                        <div class="content">Vídeos</div>
+                    </a>
+                    <a class="br-item" href="/ensino/manuais/20230216/guia-de-estudantes-iftm/">
+                        <span class="content">Guia de Estudantes IFTM</span>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Composição</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/acesso-a-informacao/institucional/organograma">
+                        <div class="content">Organograma</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/institucional/quem-e-quem">
+                        <div class="content">Quem é quem</div>
+                    </a>
+                    <a class="br-item" href="/acesso-a-informacao/institucional/agenda/">
+                        <div class="content">Agenda de autoridades</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Navegação</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                        <div class="content">Acessibilidade</div>
+                    </a>
+                    <a class="br-item" href="/mapa-do-site/">
+                        <div class="content">Mapa do site</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Programas e Projetos</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+
+                    <a class="br-item" href="/academias">
+                        <div class="content">Academias IFTM</div>
+                    </a>
+                    <a class="br-item" href="/assistenciaestudantil/">
+                        <div class="content">Assistência Estudantil</div>
+                    </a>
+                    <a class="br-item" href="/bolsa-apoio-financeiro/">
+                        <div class="content">Bolsas e apoio financeiro</div>
+                    </a>
+                    <a class="br-item" href="/internacional/">
+                        <div class="content">Idiomas (CENID) e Internacionalização</div>
+                    </a>
+                    <a class="br-item" href="/pnae/">
+                        <div class="content">Programa Nacional de Alimentação Escolar</div>
+                    </a>
+
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Serviços</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="/servicos/">
+                        <div class="content">Serviços oferecidos</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <a class="br-item header flex justify-between items-center px-10 pb-7 font-bold uppercase"
+                    href="javascript:void(0)">
+                    <div class="content text-down-01 text-bold text-uppercase items-center">Sistemas</div>
+                    <div class="support">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="br-list" style="display: none;">
+                    <span class="br-divider d-md-none"></span>
+                    <a class="br-item" href="http://biblioteca.iftm.edu.br/">
+                        <div class="content">Biblioteca</div>
+                    </a>
+                    <a class="br-item" href="/iftmparticipa/">
+                        <span class="content">IFTM Participa</span>
+                    </a>
+                    <a class="br-item" href="/ava/">
+                        <div class="content">AVA</div>
+                    </a>
+                    <a class="br-item" href="https://integra.iftm.edu.br/">
+                        <div class="content">Portal Integra</div>
+                    </a>
+                    <a class="br-item" href="/repositorio/">
+                        <div class="content">Repositório Institucional</div>
+                    </a>
+                    <a class="br-item" href="https://virtualif.iftm.edu.br/">
+                        <div class="content">Virtual IF</div>
+                    </a>
+                    <a class="br-item" href="http://mail.google.com/a/iftm.edu.br">
+                        <div class="content">Webmail Institucional</div>
+                    </a>
+                    <span class="br-divider d-md-none"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
