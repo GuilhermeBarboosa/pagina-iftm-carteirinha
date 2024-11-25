@@ -270,6 +270,11 @@
 }
 
 @media screen and (min-width: 900px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
   .navbar {
     width: 100%;
     display: flex;
